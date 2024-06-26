@@ -5,29 +5,42 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
 
 
         return(
-            <ScrollView>
+           
+             <ScrollView>
 
 <View style={styles.header}>
       
-        
+       <Image source={require('../assets/profile.png')} style={styles.logo} />
 
+       <Image source={require('../assets/search.png')} style={styles.picsea}/> 
         
         <Text style={styles.welcomeText}>Welcome back,</Text>
 
         <Text style={styles.userName}>Eric Atsu</Text>
 
-      
+        
 
       </View>
 
+      <View>
+      <Image source={require('../assets/Card.png')} style={styles.card} />
+      </View>
+
       <View style={styles.actions}>
+
+      <Image source={require('../assets/send.png')} style={styles.picse} />
+
         <Text style={styles.send}>Sent</Text>
 
+          <Image source={require('../assets/recieve.png')} style={styles.picrec}/> 
         <Text style={styles.receive}>Receive</Text>
 
+        <Image source={require('../assets/loan.png')} style={styles.piclo}/> 
        <Text style={styles.loan}>Loan</Text>
 
-       <Text style={styles.topup}>Top up</Text>
+       <Image source={require('../assets/topUp.png')} style={styles.pictop}/> 
+
+       <Text style={styles.topup}>Topup</Text>
 
         
       </View>
@@ -41,14 +54,14 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
       </View>
       <View style={styles.transactionItem}>
 
-       
+      <Image source={require('../assets/apple.png')} style={styles.logo} />
         <Text style={styles.transactionText}>Apple Store</Text>
         <Text style={styles.transactionAmount}>- $5.99</Text>
 
       </View>
       <View style={styles.transactionItem}>
 
-        
+      <Image source={require('../assets/spotify.png')} style={styles.logo} />
        
         <Text style={styles.transactionText}>Spotify</Text>
 
@@ -57,13 +70,15 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
 
       <View style={styles.transactionItem}>
        
+      <Image source={require('../assets/moneyTransfer.png')} style={styles.logo} />
       
         <Text style={styles.transactionText}>Money Transfer</Text>
         <Text style={styles.transactionAmount}>$300</Text>
       </View>
 
-      <View style={styles.transactionItem}>
+      <View style={styles.transactionItemgro}>
         
+      <Image source={require('../assets/grocery.png')} style={styles.logo} />
       
         <Text style={styles.transactionText}>Grocery</Text>
         <Text style={styles.transactionAmount}>- $88</Text>
@@ -71,6 +86,7 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
 
         
             </ScrollView>
+           
         );
     };
 
@@ -82,6 +98,7 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
             flexDirection: 'row',
             textAlign:'left',
             padding: 16,
+            bottom:15
           },
           welcomeText: {
             marginLeft: 16,
@@ -91,12 +108,13 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
           userName: {
             fontSize: 24,
             fontWeight: 'bold',
-            marginLeft:16,
+           left:1,
             top:30,
           
           },
-          searchIcon: {
-            marginLeft: 'auto',
+          picsea: {
+            left:280,
+            height:30,
           },
     
           
@@ -104,7 +122,7 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
             flexDirection: 'row',
             justifyContent: 'space-between',
             padding: 16,
-            top:25
+            top:40
           },
           transactionsTitle: {
             fontSize: 18,
@@ -117,7 +135,13 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
             flexDirection: 'row',
             alignItems: 'center',
             padding: 16,
-            top:15
+            top:20
+          },
+          transactionItemgro:{
+            flexDirection: 'row',
+            alignItems: 'center',
+            padding: 16,
+            top:20,
           },
           transactionText: {
             flex: 1,
@@ -134,30 +158,55 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
           },
 
           actions:{
-            top:30,
+            top:50,
             flexDirection: 'row',
             
           },
 
           send:{
-            left:80,
+            left:25,
             fontSize:20
           },
 
           receive:{
-            left:130,
+            left:55,
             fontSize:20
           },
 
           loan:{
-            left:160,
+            left:95,
             fontSize:20
           },
 
           topup:{
-            left:180,
+            left:110,
             fontSize:20
-          }
+          },
+          picse:{
+            left:50,
+            bottom:30
+          },
+          picrec:{
+            left:90,
+            bottom:30
+          },
+
+          piclo:{
+            left:130,
+            bottom:30,
+          },
+
+          pictop:{
+            left:150,
+            bottom:30,
+          },
+
+          card:{
+            left:30,
+            bottom:4,
+          },
+
+          
 
 
         
