@@ -35,3 +35,8 @@ COMPONENTS AND USES
  Tab Navigation:
         Enables users to navigate between the HomeScreen and SettingsScreen.
         Provides a user-friendly interface for screen switching.
+        
+![alt text](<Screenshot_20240626_200100_Expo Go.jpg>)
+
+
+![alt text](<Screenshot_20240626_200112_Expo Go.jpg>)
