@@ -3,10 +3,12 @@ import { View, StyleSheet, Text, Image, ScrollView,Button, TouchableOpacity } fr
 
     export default function Profile({ navigation }) {
 
+     
+
 
         return(
            
-             <ScrollView>
+             <ScrollView >
 
 <View style={styles.header}>
       

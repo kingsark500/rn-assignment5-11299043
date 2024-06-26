@@ -1,7 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import 'react-native-gesture-handler';
-import { Image } from 'react-native';
 
 import Profile from './Screens/ProfileScreen';
 import SettingsScreen from './Screens/SettingsScreen';
@@ -23,6 +22,10 @@ const StatisticsScreen = () => (
 
 
 export default function App() {
+
+  
+
+  
   return (
 
     
@@ -38,7 +41,7 @@ export default function App() {
 
 <Tab.Screen name="Statistics" component={Stats} />
 
-<Tab.Screen name="Settings" component={SettingsScreen} />
+<Tab.Screen name="Settings" component={SettingsScreen}/>
 
 </Tab.Navigator>
 
@@ -47,6 +50,8 @@ export default function App() {
 
 
     </NavigationContainer>
+
+
    
      
 
